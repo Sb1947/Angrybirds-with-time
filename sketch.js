@@ -90,7 +90,7 @@ function keyPressed(){
 
 async function getTime()
     {
-        var response = await fetch("http://worldtimeapi.org/api/timezone/America/Toronto");
+        var response = await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata");
         var responseJSON = await response.json();
         console.log(responseJSON)
         var datetime = responseJSON.datetime;
@@ -104,7 +104,7 @@ async function getTime()
 
         else
         {
-            bg = "sprites/bg2.png";
+            bg = "sprites/bg2.jpg";
         }
         backgroundImg = loadImage(bg)
     }
